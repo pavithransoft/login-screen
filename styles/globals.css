@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .screen-split {
+    @apply w-screen h-screen flex items-center;
+  }
+  .screen-left {
+    @apply bg-[#F8F8F8]  text-center w-[50rem] h-full grid grid-rows-3 gap-[18rem] items-center p-20;
+  }
+  .screen-right {
+    @apply bg-white h-full w-[50rem] px-[10rem] pt-[3rem];
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold;
+  }
+  h2 {
+    @apply text-lg;
+  }
+  p {
+    @apply text-sm;
+  }
+  form {
+    @apply mt-[1.5rem] flex flex-col gap-2;
+  }
+  label {
+    @apply text-sm;
+  }
+  input {
+    @apply border rounded-xl p-2 w-full;
+  }
+  button {
+    @apply border rounded-xl p-2 w-full hover:scale-95 duration-300;
+  }
+  a {
+    @apply text-sm font-semibold hover:scale-110 duration-300 p-1;
+  }
+  hr {
+    @apply border-gray-300 bg-gray-300 w-[11rem] ml-[1.5rem];
+  }
+}
+
+@layer components {
+  .password-layer {
+    @apply grid grid-cols-2 gap-2;
+  }
+  .new-confirm {
+    @apply grid grid-rows-1 gap-2;
+  }
+  .eye-icon {
+    @apply fixed h-6 w-6 right-3 bottom-2 absolute;
+  }
+  .checkbox-layer {
+    @apply flex flex-row gap-2 mb-2 mt-2;
+  }
+  .checkbox {
+    @apply h-4 w-4 m-1;
+  }
+  .signup-login {
+    @apply text-white font-bold bg-[#6C5DD3];
+  }
+  .hr-line {
+    @apply grid grid-cols-3 items-center text-center mt-6;
+  }
+  .link-login {
+    @apply text-[#002D74] mt-6 flex flex-wrap gap-[5rem];
+  }
+  .link-icon {
+    @apply h-7 w-7 ml-14;
+  }
+  .login-link {
+    @apply flex justify-center mt-4 text-sm;
+  }
+  .rememberme-layer {
+    @apply flex flex-row justify-between my-2;
+  }
+  .rememberme-checkbox {
+    @apply flex flex-row gap-0.5 text-sm items-center;
+  }
+}
